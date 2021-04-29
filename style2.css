@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    margin-top: 20px;
+    background: #eee;
 }
 
 .container {
@@ -35,11 +36,6 @@ h4 {
     align-items: center;
 }
 
-body {
-    margin-top: 20px;
-    background: #eee;
-}
-
 .navbar {
     background: #fff;
     padding-left: 16px;
@@ -49,14 +45,6 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
 
-.nav-link img {
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    margin: -8px 0;
-    float: left;
-    margin-right: 10px;
-}
 
 .navbar .navbar-brand {
     color: #555;
@@ -65,7 +53,13 @@ body {
     font-family: 'Merienda One', sans-serif;
 }
 
-.navbar .navbar-brand i {
-    font-size: 20px;
-    margin-right: 5px;
+@media (max-width: 1200px) {
+    .form-inline {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
 }
