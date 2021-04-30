@@ -10,7 +10,7 @@ body {
     background: #eee;
 }
 
-h2{
+h2 {
     margin-top: 80px;
     margin-left: 18px;
 }
@@ -77,6 +77,10 @@ h4 {
 .invoice-date {
     text-align: right;
     padding-left: 20px
+}
+
+.invoiceprice {
+    overflow: scroll;
 }
 
 .invoice-price {
