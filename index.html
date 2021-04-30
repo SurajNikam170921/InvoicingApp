@@ -26,20 +26,22 @@
         <!-- Sidebar  -->
 
         <!-- Page Content  -->
-        
-            <nav class="navbar navbar-dark bg-primary">
-                <a class="navbar-brand  mb-0 h1" href="#">InvoiceApp</a>
-            </nav>
+
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand  mb-0 h1" href="#">InvoiceApp</a>
+        </nav>
+        <div class="heading">
+            <h2>Invoices</h2>
+        </div>
         <div class="container-fluid">
-                <h2>Invoices</h2>
-                <div class="card text-center">
-                    <div class="card-header">
-                        <ul class="nav nav-pills card-header-pills">
-                            <li class="nav-item">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myInvoice"><i class="fa fa-plus"></i> New Invoice</button>
-                            </li>
-                            <div class="input-group" align="center">
-                                <!-- <li class="nav-item">
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myInvoice"><i class="fa fa-plus"></i> New Invoice</button>
+                        </li>
+                        <div class="input-group" align="center">
+                            <!-- <li class="nav-item">
                             <input type="date" id="fromdate" name="fromdate">
                             </li>
                             <li class="nav-item">
@@ -53,50 +55,45 @@
                                 <button type="button" class="btn btn-primary" id="search" data-toggle="table" data-target="dtBasicExample">search</button>
                             </div>
                             </li> -->
-                                <input type="text" name="search" id="search" onkeyup="searchTable()" placeholder="Search for invoice by using date..." class="form-control" />
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table table-bordered" id="dtBasicExample">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">id</th>
-                                            <th scope="col">Amount</th>
-                                            <th scope="col">Company</th>
-                                            <th scope="col">Contragent</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>1154.1 USD</td>
-                                            <td>Company 1</td>
-                                            <td>Company 2</td>
-                                            <td>02/02/2021</td>
-                                            <td>Paid</td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myInvoiceOld"><i class="fas fa-eye" data-toggle="tooltip" title="View"></i></button>
-                                                <!-- <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button> -->
-                                                <!-- <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button> -->
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <input type="text" name="search" id="search" onkeyup="searchTable()" placeholder="Search for invoice by using date..." class="form-control" />
                         </div>
-
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-bordered" id="dtBasicExample">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Company</th>
+                                        <th scope="col">Contragent</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">0000121BCE</td>
+                                        <td>1154.1 USD</td>
+                                        <td>Company 1</td>
+                                        <td>Company 2</td>
+                                        <td>02/02/2021</td>
+                                        <td>Paid</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myInvoiceOld"><i class="fas fa-eye" data-toggle="tooltip" title="View"></i></button>
+                                            <!-- <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button> -->
+                                            <!-- <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
-           
-
-
+            </div>
         </div>
 
         <!-- Modal -->
@@ -110,7 +107,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                         <div class="col-md-12">
                             <div class="invoice">
                                 <!-- begin invoice-company -->
@@ -198,6 +194,7 @@
                                     </div>
                                     <!-- end table-responsive -->
                                     <!-- begin invoice-price -->
+                                    <div class="invoiceprice">
                                     <div class="invoice-price">
                                         <div class="invoice-price-left">
                                             <div class="invoice-price-row">
@@ -217,7 +214,7 @@
                                         <div class="invoice-price-right">
                                             <small>TOTAL</small> <span class="f-w-600">$4508.00</span>
                                         </div>
-                                    </div>
+                                    </div></div>
                                     <!-- end invoice-price -->
                                 </div>
                                 <!-- end invoice-content -->
@@ -242,11 +239,10 @@
                                 <!-- end invoice-footer -->
                             </div>
                         </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-warning" onclick="pageRedirect()">Submit Payment</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-warning" onclick="pageRedirect()">Submit Payment</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -428,13 +424,11 @@
                     }
                 }
             }
-
         </script>
         <script type="text/javascript">
             function pageRedirect() {
                 window.location.href = "index2.html";
             }
-
         </script>
         <!-- <script type="text/javascript">
                 $(document).ready(function () {
@@ -460,6 +454,4 @@
                 }
         );
              </script> -->
-</body>
-
-</html>
+</body></html>

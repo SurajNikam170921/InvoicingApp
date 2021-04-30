@@ -10,12 +10,21 @@ body {
     background: #eee;
 }
 
+h2{
+    margin-top: 80px;
+    margin-left: 18px;
+}
+
 h4 {
     margin: 2rem 0rem 1rem;
 }
 
 .modal {
     align-items: center;
+}
+
+.card-body {
+    overflow: scroll;
 }
 
 .table-image {
@@ -173,28 +182,6 @@ h4 {
     margin-top: -20px;
     border-bottom: 1px solid #d6d6d6;
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
-}
-
-.nav-link img {
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    margin: -8px 0;
-    float: left;
-    margin-right: 10px;
-}
-
-.navbar .navbar-brand {
-    color: #555;
-    padding-left: 0;
-    padding-right: 50px;
-    font-family: 'Merienda One', sans-serif;
-}
-
-.navbar .active a,
-.navbar .active a:hover,
-.navbar .active a:focus {
-    background: transparent !important;
 }
 
 @media (max-width: 1200px) {

@@ -18,6 +18,15 @@ h4 {
     align-items: center;
 }
 
+.card-body {
+    overflow: scroll;
+}
+
+h2{
+    margin-top: 80px;
+    margin-left: 18px;
+}
+
 .table-image {
 
     td,
@@ -39,13 +48,6 @@ h4 {
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
 
-
-.navbar .navbar-brand {
-    color: #555;
-    padding-left: 0;
-    padding-right: 50px;
-    font-family: 'Merienda One', sans-serif;
-}
 
 @media (max-width: 1200px) {
     .form-inline {

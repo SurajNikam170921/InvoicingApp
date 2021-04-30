@@ -10,12 +10,29 @@ body {
     background: #eee;
 }
 
+h2{
+    margin-top: 80px;
+    margin-left: 18px;
+}
+
 h4 {
     margin: 2rem 0rem 1rem;
 }
-
+/*.modal-guts{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+*/
 .modal {
     align-items: center;
+}
+
+.card-body {
+    overflow: scroll;
 }
 
 .table-image {
@@ -69,7 +86,9 @@ h4 {
     text-align: right;
     padding-left: 20px
 }
-
+.invoiceprice{
+    overflow: scroll;
+}
 .invoice-price {
     background: #f0f3f4;
     display: table;
@@ -176,18 +195,6 @@ h4 {
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
 
-.navbar .navbar-brand {
-    color: #555;
-    padding-left: 0;
-    padding-right: 50px;
-    font-family: 'Merienda One', sans-serif;
-}
-
-.navbar .active a,
-.navbar .active a:hover,
-.navbar .active a:focus {
-    background: transparent !important;
-}
 
 
 
